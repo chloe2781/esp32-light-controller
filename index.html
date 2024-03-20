@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP32 Light Controller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <br><br>
+    <h1>ESP32 Light Controller</h1>
+    <button id="connectButton">Connect to ESP32</button>
+    <br><br><br><br><br><br>
+
+    <div class="light-container">
+        <div id="coolLight" class="light-status off">
+            <p id="lightStatus1">Cool Light: Off</p>
+            <p id="brightness1">Brightness: 0%</p>
+        </div>
+
+        <div id="warmLight" class="light-status off">
+            <p id="lightStatus2">Warm Light: Off</p>
+            <p id="brightness2">Brightness: 0%</p>
+        </div>
+    </div>
+    <br><br><br><br>
+    
+    <div id="mode" class="mode-indicator">
+        <span>Dimming Cold Light</span>
+        <div class="toggle-switch">
+            <div class="toggle-circle"></div>
+        </div>
+        <span>Dimming Warm Light</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

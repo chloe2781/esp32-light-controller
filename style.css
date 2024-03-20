@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+#connectButton {
+    background-color: red; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 15px 32px; /* Some padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Get it on the same line */
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px; /* Some margin */
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.status {
+    font-size: 1.2em; /* Larger text for status */
+    margin: 20px;
+}
+
+.brightness {
+    color: #333; /* Dark grey color for text */
+    background-color: #f0f0f0; /* Light grey background */
+    border-left: 5px solid #4CAF50; /* Green accent border */
+    padding: 10px; /* Some padding */
+    margin: 10px 0; /* Margin top and bottom */
+}
+
+#mode {
+    font-style: italic; /* Italic font for mode */
+    margin: 20px;
+}
+
+.mode-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    color: black
+}
+
+.toggle-switch {
+    width: 100px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 15px;
+    position: relative;
+    margin: 0 10px;
+}
+
+.toggle-circle {
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    left: 0; /* Start on the left, change with JavaScript */
+    transition: left 0.3s; /* Smooth transition */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    color: white; /* Ensuring readability on darker backgrounds */
+}
+
+.light-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.light-status {
+    padding: 10px;
+    border-radius: 5px;
+    width: 45%;
+}
+
+/* Default off state */
+.off {
+    background-color: black;
+}
+
+/* Specific light states */
+.cool-on {
+    background-color: blue;
+}
+
+.warm-on {
+    background-color: red;
+}
