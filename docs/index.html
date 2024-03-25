@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bringing Light to the Digital Canvas: My Interactive ESP32 Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+        }
+        img, video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        video {
+            max-width: 50%;
+        }
+        .caption {
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Bringing Light to the Digital Canvas: My Interactive ESP32 Project</h1>
+
+<p>For me, this exploration took the shape of a seemingly normal object transformed into a signal of creativity: a cardboard enclosure, housing an array of electronics, that brought to life a miniature illuminated scene reminiscent of a cozy dwelling. This project, crafted for my Creative Embedded Systems class, was not just an assignment; it was a journey into the blend of art, technology, and everyday life.</p>
+
+<video src="assets/IMG_0804.mov" controls="" muted></video>
+
+<h2>The Inspiration</h2>
+
+<p>The inspiration for this project stemmed from the desire to create something visually appealing, interactive, and meaningful, using the ESP32 TTGO T-display along with a set of simple components: buttons, LEDs, and a potentiometer. The goal was to craft an interactive device that not only serves a functional purpose but also evokes a sense of wonder and curiosity.</p>
+
+<h2>The Setup</h2>
+
+<h3>ESP32 TTGO T-Display</h3>
+
+<p>The core of my project, the <strong>ESP32 TTGO T-Display</strong>, is more than just a microcontroller. It's the brain that orchestrates the interaction between the user and the lighting system. Utilizing the Arduino IDE, I developed a firmware that listens for button presses to toggle light states and reads potentiometer values to adjust brightness.</p>
+
+<h3>Understanding the Components</h3>
+
+<ul>
+    <li><strong>Buttons:</strong> Three tactile buttons are used for user input. Each button has a distinct function: one toggles the warm LEDs, another toggles the cool LEDs, and the third switches the dimming mode between warm and cool lighting.</li>
+    <li><strong>Potentiometer:</strong> This variable resistor allows users to adjust the brightness of the LEDs. Its resistance changes with the turning of its knob, which is read by the ESP32 as an analog input. The software then translates this input into a change in LED brightness.</li>
+    <li><strong>LED Lights:</strong> A mix of red, yellow, blue, and green LEDs represent warm and cool lights. These LEDs are connected to the ESP32 via digital output pins, allowing the microcontroller to turn them on or off and adjust their brightness.</li>
+</ul>
+
+<img src="assets/1.jpg" alt="The ESP32 setup on a breadboard">
+<p class="caption">Fig 1: The initial setup of ESP32 with components on the breadboard.</p>
+
+<h3>The Enclosure</h3>
+
+<p>The choice of enclosure was as much a part of the project as the electronics themselves. A cardboard packaging from Costco Apple Sauce was repurposed into a little house, complete with slots for windows. This choice of material and design was not accidental; it reflects the project's ethos of finding beauty and utility in the simplest of things.</p>
+
+<img src="assets/2.png" alt="Cardboard enclosure resembling a house">
+<p class="caption">Fig 2: The cardboard enclosure, designed to mimic a cozy house, housing the electronic components.</p>
+<img src="assets/3.png" alt="Cardboard enclosure resembling a house">
+<p class="caption">Fig 3: The cardboard enclosure, potentiometer side.</p>
+<img src="assets/4.png" alt="Cardboard enclosure resembling a house">
+<p class="caption">Fig 4: The cardboard enclosure, dimming setting switch.</p>
+<img src="assets/5.png" alt="Cardboard enclosure resembling a house">
+<p class="caption">Fig 5: The cardboard enclosure, peaking into the enclosure.</p>
+<img src="assets/6.png" alt="Cardboard enclosure resembling a house">
+<p class="caption">Fig 6: The cardboard enclosure, the back, where the USB-C cable connects to the ESP32.</p>
+<img src="assets/7.png" alt="Cardboard enclosure resembling a house">
+<p class="caption">Fig 7: The cardboard enclosure, top view, main on/off buttons.</p>
+
+
+<p>Inside this cardboard home, the electronics come to life, creating a warm glow through the windows, mimicking the inviting ambiance of a home. The interplay of light and shadow through the cutouts created a visually stunning effect.</p>
+
+<h2>The Digital Interface</h2>
+
+<p>To extend the interaction beyond the physical device, I developed a web-based UI that connects to the ESP32 via a serial connection. This interface not only allows remote control of the lights but also displays real-time feedback on their status and brightness levels. The design of the UI mirrors the physical device's warmth and simplicity, with intuitive controls and visual indicators that enhance the user experience.</p>
+
+<p>The integration between the hardware and the web UI showcases the  interactivity, allowing users not only to control the device remotely but also to visualize its status through a digital interface.</p>
+
+<p>By detailing these technical aspects, I hope to provide insights into the complexity and beauty of working with interactive devices. The synergy between hardware and software in projects like this one offers endless possibilities for creativity and innovation.</p>
+
+<img src="assets/8.png" alt="Web UI for light control">
+<p class="caption">Fig 8: The web-based user interface for controlling the light settings, no serial connection.</p>
+<img src="assets/9.png" alt="Web UI for light control">
+<p class="caption">Fig 9: The web-based user interface for controlling the light settings, establishing serial connection.</p>
+<img src="assets/10.png" alt="Web UI for light control">
+<p class="caption">Fig 10: The web-based user interface for controlling the light settings, only warm lights on.</p>
+<img src="assets/11.png" alt="Web UI for light control">
+<p class="caption">Fig 11: The web-based user interface for controlling the light settings, both cool and warm lights on.</p>
+
+<h2>Challenges and Learnings</h2>
+
+<p>Every project has its hurdles, and this one was no exception. From the complexity of serial communication to the nuances of web development, each challenge was a learning opportunity. Perhaps the most valuable lesson was the importance of user experience design, both in the physical and digital realms. Crafting an interface that is both intuitive and enjoyable requires a deep understanding of the user's interaction with both the device and the software.</p>
+
